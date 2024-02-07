@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  --Verypaleblue: hsl(225, 100%, 98%);
+  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Darkblue: hsl(223, 47%, 23%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--Desaturatedblue);
+}
+.card {
+  max-width: 22rem;
+  background-color: white;
+  border-radius: 20px;
+}
+.card img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  margin-bottom: 1rem;
+}
+h2 {
+  margin-bottom: 1rem;
+  font-weight: 900;
+  color: var(--Darkblue);
+}
+.card > p {
+  padding: 0 20px;
+  margin-bottom: 1.2rem;
+  color: var(--Desaturatedblue);
+  font-size: 1rem;
+  line-height: 25px;
+}
+.annual-plan{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Verypaleblue);
+    margin: 0 20px 30px 20px ;
+    border-radius: 20px;
+    padding: 20px 0 10px 0;
+}
+.plan > h3{
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+.plan > p{
+    color: var(--Desaturatedblue);
+}
+.change a{
+    color: blue;
+}
+button{
+    padding: 15px 70px 15px 70px;
+    background-color: hsl(224deg 100% 55.77%);
+    border-radius: 20px;
+    color: white;
+    border: none;
+    box-shadow: 0px 10px 5px #80808061;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.last-p > p{
+    padding: 10px 0 20px 0px;
+    color: var(--Desaturatedblue);
+    font-weight: 700;
+}
+/******************Hover effects************************/
+.change a:hover{
+  text-decoration: none;
+  color: var(--Desaturatedblue);
+}
+button:hover{
+  background-color: var(--Darkblue);
+}
+.last-p > p:hover{
+  color: var(--Darkblue);
+}
